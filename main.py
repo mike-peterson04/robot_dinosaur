@@ -1,3 +1,5 @@
+from robot import Robot
+
 
 def test_method():
     print("put stuff here")
