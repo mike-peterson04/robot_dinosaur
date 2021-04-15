@@ -59,7 +59,7 @@ class Battlefield:
     def dino_turn(self, dinosaur):
         self.show_dino_opponent_options()
         dinosaur.attack(self.fleet.robots[int(input("What robot number do you wish to attack"))-1])
-        if self.dino_count >= 3:
+        if self.dino_count >= 2:
             self.dino_count = 0
         else:
             self.dino_count += 1
@@ -69,7 +69,7 @@ class Battlefield:
     def robo_turn(self, robot):
         self.show_robo_opponent_options()
         robot.attack(self.herd.dinos[int(input("What dinosaur number do you wish to attack")) - 1])
-        if self.robo_count >=3:
+        if self.robo_count >=2:
             self.robo_count = 0
         else:
             self.robo_count += 1
@@ -80,14 +80,14 @@ class Battlefield:
         i = 0
         for robo in self.fleet.robots:
             if robo.health > 0:
-                print(f"Robot number{i+1} is armed with a {robo.weapon.type} and has {robo.health} remaining")
+                print(f"Robot number {i+1} is armed with a {robo.weapon.type} and has {robo.health} remaining")
             i += 1
 
     def show_robo_opponent_options(self):
         i = 0
         for dino in self.herd.dinos:
             if dino.health > 0:
-                print(f"dinosaur number{i + 1}  has {dino.health} remaining")
+                print(f"dinosaur number {i + 1}  has {dino.health} remaining")
             i += 1
 
     def display_winners(self):

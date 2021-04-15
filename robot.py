@@ -25,4 +25,5 @@ class Robot:
             self.power_level -= 10
             dinosaur.health -= self.weapon.attack_power
             if dinosaur.health <=0:
+                dinosaur.health = 0
                 print("Your target has died")

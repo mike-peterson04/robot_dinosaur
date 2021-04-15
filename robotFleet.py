@@ -8,5 +8,5 @@ class Fleet:
     def create_fleet(self):
         i = 0
         while i < 3:
-            self.robots.append(Robot(input(f'Please name Robot {i} ')))
+            self.robots.append(Robot(input(f'Please name Robot {i+1} ')))
             i += 1

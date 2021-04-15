@@ -18,3 +18,5 @@ class Herd:
             }
             self.dinos.append(Dinosaur(selector[input()], input(f"What is Dinosaur {i+1}'s Attack Power?")))
             i += 1
+
+
