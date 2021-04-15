@@ -1,5 +1,6 @@
 from robot import Robot
 from robotFleet import RobotFleet
+from weapon import Weapon
 def test_method():
     print("put stuff here")
 
