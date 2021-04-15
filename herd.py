@@ -1,5 +1,6 @@
 from dinosaur import Dinosaur
 
+
 class Herd:
     def __init__(self):
         self.dinos = []
@@ -15,6 +16,5 @@ class Herd:
                 "2": "Triceratops",
                 "3": "Stegosaurus"
             }
-            self.dinos.append(Dinosaur(selector[input()],input(f"What is Dinosaur {i+1}'s Attack Power?")))
-            i+=1
-
+            self.dinos.append(Dinosaur(selector[input()], input(f"What is Dinosaur {i+1}'s Attack Power?")))
+            i += 1

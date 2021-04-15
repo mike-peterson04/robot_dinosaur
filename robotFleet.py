@@ -1,5 +1,6 @@
 from robot import Robot
 
+
 class Fleet:
     def __init__(self):
         self.robots = []
@@ -8,5 +9,4 @@ class Fleet:
         i = 0
         while i < 3:
             self.robots.append(Robot(input(f'Please name Robot {i} ')))
-            i+=1
-
+            i += 1
