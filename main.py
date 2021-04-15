@@ -1,12 +1,11 @@
 from robot import Robot
 from robotFleet import Fleet
 from weapon import Weapon
+from battlefield import Battlefield
 def test_method():
 
-    machine_overlord = Fleet()
-    machine_overlord.create_fleet()
-    print(machine_overlord)
-
+   forest_planet = Battlefield()
+   forest_planet.run_game()
 
 def weapon_selection():
     print("Press 1 to equip your robot /w a Sword")
