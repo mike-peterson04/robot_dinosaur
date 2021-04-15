@@ -7,6 +7,7 @@ def test_method():
     machine_overlord.create_fleet()
     print(machine_overlord)
 
+
 def weapon_selection():
     print("Press 1 to equip your robot /w a Sword")
     print("Press 2 to equip your robot /w a Rifle")
