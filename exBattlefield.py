@@ -16,10 +16,13 @@ class ExBattlefield:
 
         if self.terrain == 1:
             self.terrain = "Forest"
+            print("The battle will take place deep in the Forests")
         elif self.terrain == 2:
             self.terrain = "Plains"
+            print("The battle will take place on the open plains")
         elif self.terrain == 3:
             self.terrain = "City"
+            print("They're destroying our City")
 
         for robo in self.fleet.robots:
             self.fleet_health += robo.health
