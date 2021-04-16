@@ -7,6 +7,7 @@ class Dinosaur:
         self.attacks = ("Bite", "Charge", "Tail-Whip")
 
     def attack(self, robot):
+
         if self.health <= 0:
             print(f'{self.type} is out of health and is unable to attack')
 

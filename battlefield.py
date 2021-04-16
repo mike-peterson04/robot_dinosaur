@@ -29,7 +29,7 @@ class Battlefield:
             self.dino_turn(self.herd.dinos[self.dino_count])
 
         else:
-            print("Coin flip came up Tails it's the Robots's turn")
+            print("Coin flip came up Tails it's the Robot's turn")
             self.robo_turn(self.fleet.robots[self.robo_count])
 
         while self.fleet_health > 0 and self.herd_health > 0:
